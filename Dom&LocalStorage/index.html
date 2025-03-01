@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body onload="loadGrades()">
+
+    <div class="container">
+
+        <h1>Student Managment System</h1>
+
+        <div class="studentForm">
+
+            <input type="text" placeholder=" Student Name" id="studentName">
+            <input type="number" placeholder="Grade (0-100)" id="studentGrade">
+            <div class="gender-selection">
+                <label>
+                    <input type="radio" name="gender" value="M" checked>Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="F">Female
+                </label>
+            </div>
+            <button onclick="addStudent()">Button Add Student</button>
+        </div>
+
+        <!-- add filter -->
+         <div class="filterControls">
+
+            <h2>Filter</h2>
+            <button onclick="filterStudent('all')">All</button> 
+            <button onclick="filterStudent('high')">High Grades </button>
+            <button onclick="filterStudent('low')"> Low Grades</button>
+         </div>
+        <div class="studentContainer" id="studentContainer"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

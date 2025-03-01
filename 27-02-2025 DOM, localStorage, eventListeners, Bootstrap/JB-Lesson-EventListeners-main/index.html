@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Event Listeners Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    
+    <h1>Event Listeners in JavaScript</h1>
+    
+    <button id="clearLog" class="clear-btn">Clear Log</button>
+    
+    <div class="container">
+
+        <div class="event-area">
+
+            <!-- Example 1: Click Events -->
+            <div class="event-section">
+                <h2>1. Click Events</h2>
+                <p>Triggers when an element is clicked.</p>
+                <button id="clickButton">Click Me</button>
+            </div>
+
+            <!-- Example 2: Mouse Events -->
+            <div class="event-section">
+                <h2>2. Mouse Events</h2>
+                <p>Hover over the box to see mouse events in action.</p>
+                <div class="box" id="hoverBox">Hover Me</div>
+            </div>
+
+            <!-- Example 3: Keyboard Events -->
+            <div class="event-section">
+                <h2>3. Keyboard Events</h2>
+                <p>Type in this input field to see keyboard events:</p>
+                <input type="text" id="keyInput" placeholder="Type something...">
+            </div>
+
+            <!-- Example 4: Form Events -->
+            <div class="event-section">
+                <h2>4. Form Events</h2>
+                <p>Try submitting this form:</p>
+                <form id="sampleForm">
+                    <input type="text" placeholder="Your name">
+                    <button type="submit">Submit Form</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="logArea"></div>
+
+    </div>
+
+
+</body>
+
+</html>
